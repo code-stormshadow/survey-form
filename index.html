@@ -1,0 +1,165 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" text="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Survey form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Survey Form</h1>
+
+      <p>
+        <em> Thank you for making this survey form.</em>
+      </p>
+
+      <div class="main-container">
+        <div>
+          <form class="form-group">
+            <label for="Full Name"><b>Name</b></label
+            ><br />
+
+            <input
+              id="data"
+              type="text"
+              name="Name"
+              placeholder="Enter your Name"
+              required
+            /><br />
+          </form>
+        </div>
+
+        <div>
+          <form class="form-group">
+            <label for="Age"><b>Age</b></label> <br />
+
+            <input
+              id="data"
+              type="number"
+              name="Age"
+              placeholder="18"
+              min="18"
+              max="100"
+              required
+            /><br />
+          </form>
+        </div>
+
+        <div>
+          <form class="form-group">
+            <label for="email"><b>Email</b></label> <br />
+
+            <input
+              id="data"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              <br
+            />
+          </form>
+        </div>
+
+        <div class="role-group">
+          <form action="">
+            <label for="Role"
+              ><b>Choose A Role That Best Describes You</b></label
+            >
+            <br />
+
+            <select id="Role" name="Role" required>
+              <br />
+              <option value="Select Your Role">Select Your Role</option>
+              <option value="Data Analyst">Data Analyst</option>
+              <option value="Copywriter">Copywriter</option>
+              <option value="Cashier">Cashier</option>
+              <option value="Fire fighter">Fire Fighter</option>
+              <option value="Computer Engineer">Computer Engineer</option>
+              <option value="Sales">Sales</option>
+            </select>
+          </form>
+        </div>
+
+        <div class="recommend">
+          <form action="">
+            <label for="Recommendations">
+              <b>Would you recommend Our Product To A Friend?</b>
+            </label>
+            <br />
+
+            <div class="radio-group">
+              <input type="Radio" id="Never" name="Check" />
+              <label for="Never"> Never</label> <br />
+            </div>
+
+            <div class="radio-group">
+              <input type="Radio" id="Maybe" name="Check" />
+              <label for="Maybe"> Maybe</label> <br />
+            </div>
+
+            <div class="radio-group">
+              <input type="Radio" id="Likely" name="Check" />
+              <label for="Likely">Likely</label> <br />
+            </div>
+
+            <div class="radio-group">
+              <input type="Radio" id="Definitely" name="Check" />
+              <label for="Definitely"> Definitely</label> <br />
+            </div>
+          </form>
+        </div>
+
+        <div class="likes">
+          <form action="">
+            <label for="Our Products">
+              <b>Select Things You Liked About Our Products?</b>
+            </label>
+            <br />
+
+            <div class="checkbox-group">
+              <input type="Checkbox" id="UI" name="UI" />
+              <label for="UI"> UI</label> <br />
+            </div>
+
+            <div class="checkbox-group">
+              <input type="Checkbox" id="Features" name="Features" />
+              <label for="Features">Features</label> <br />
+            </div>
+
+            <div class="checkbox-group">
+              <input type="Checkbox" id="Service" name="Service" />
+              <label for="Service">Service</label> <br />
+            </div>
+
+            <div class="checkbox-group">
+              <input type="Checkbox" id="Simpleness" name="Check" />
+              <label for="Simpleness"> Simpleness</label> <br />
+            </div>
+          </form>
+        </div>
+
+        <div class="form-group">
+          <label for="Remarks"><b>Remarks</b></label> <br />
+          <textarea
+            name="Remarks"
+            placeholder="How Can We Improve?"
+            id="Remarks"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="submit">
+          <button type="submit" id="submit" " name="Submit">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
